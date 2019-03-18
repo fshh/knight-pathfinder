@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+p {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+/* ~~~~~~~~ style for the chess board ~~~~~~~~ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#chessboard {
+  padding: 0px;
+  margin: 0 auto;
+  border: 2px solid #181818;
+}
+
+#chessboard tr td {
+  width: 60px;
+  height: 60px;
+}
+
+#chessboard tr:nth-child(2n) td:nth-child(2n+1) {
+  background: #7f7f7f;
+}
+
+#chessboard tr:nth-child(2n+1) td:nth-child(2n) {
+  background: #7f7f7f;
+}
+
+.start {
+  background: #32c832 !important;
+}
+
+.end {
+  background: #c83232 !important;
+}
+
+.path {
+  background: #efef4f !important;
+}
+
+.counter {
+  padding: 0;
+}
+
+/* ~~~~~~~~ style for the reset button ~~~~~~~~ */
+#buttonwrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#resetbutton {
+  background-color: #304fff;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#resetbutton:hover {
+  background-color: #253cbc;
+}
